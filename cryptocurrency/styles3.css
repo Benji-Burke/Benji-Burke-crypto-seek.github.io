@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    
+}
+h1 {
+    display: inline-block;
+}
+
+.box {
+    border: 1px solid black;
+    width: 400px;
+    justify-content: center;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+li >a {
+    text-align: center;
+}
+
