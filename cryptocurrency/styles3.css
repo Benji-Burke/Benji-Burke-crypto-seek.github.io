@@ -1,4 +1,4 @@
-.logo {
+h4 {
     color: whitesmoke;
     letter-spacing: 5px;
     text-transform: capitalize;
@@ -36,8 +36,13 @@
     text-align: center;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
 .box li {
     margin: 0;
+    
     display: flex;
     /* position: relative; */
     top: 50%;
@@ -57,21 +62,20 @@ li >a {
 }
 
 a:link {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
-
-a:visited {
+div a:visited {
     color: blue;
     text-decoration: none;
 }
 
-a:hover {
+div a:hover {
     color: blue;
     text-decoration: underline;
 }
 
-a:active{
+div a:active{
     color: red;
     text-decoration: underline;
 }
