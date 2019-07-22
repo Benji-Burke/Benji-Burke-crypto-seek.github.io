@@ -63,41 +63,6 @@ $(() => {
         $('.a').append(tableRow);
         
     }
-
-
-
-
-
-    // for (let i = 0; i < $marketCapNumber; i++) {
-        // $('.a').append(
-        //       "<tr class='tableRowData'>" +
-        //         "<td class='rank data' id = '1'> </td>" +
-        //         "<td class='name data' id = '2'> </td>" +
-        //         "<td class=' symbol data' id= '3'> </td>" +
-        //         "<td class=' marketCap data' id ='4'> </td>" +
-        //         "<td class='price data' id='5'> </td>" +
-        //         "</tr>"
-        //     );
-        //   }
-          
-    //data from the API
-    // for (let j = 0; j < 100; j++) {
-      // Name
-    //   let j=0;
-    
-      //   created inputs
-      // assigning variable to class names
-        // const nameClass = $('.name');
-        // const symbolClass= $('.symbol');
-        // const priceClass = $('.price');
-        // const marketCapClass = $('.marketCap');
-      // append to the <td>
-      
-    //   $(nameClass).append($nameOfCoin);
-    //   $(symbolClass).append($ticker);
-    //   $(priceClass).append($coinprice);
-    //   $(marketCapClass).append($totalMarketCap);
-    // }
   };
   $.ajax({
     url: endpoint
