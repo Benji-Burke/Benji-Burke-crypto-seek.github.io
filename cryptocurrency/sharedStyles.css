@@ -31,10 +31,10 @@
   }
 
   .navLinks a {
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
   }
 
