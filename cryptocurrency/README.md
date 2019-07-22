@@ -24,3 +24,4 @@ Future plans that I want to implement? There are a lot of things that I'd like t
 fix too. On the resource page the title of the website isn't white like it's suppose too. 
 I want to add links for every coin that is produced so when the user clicks on them it brings them to a page bio of the coin. I want to add a search function that
 allows a user to search a top 100 coin. 
+
