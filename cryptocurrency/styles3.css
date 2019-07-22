@@ -1,3 +1,10 @@
+.logo {
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-size: 24px;
+  }
+
 .container {
     display: flex;
     flex-direction: column;

@@ -1,68 +1,86 @@
-html {
-    background-color: rgba(187, 175, 175, 0.856);
-    margin: 0;
+* {
+    /* background: rgba(187, 175, 175, 0.856); */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
   }
-  
-  .main__header {
-    width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     background: #474644ec;
-    padding: 15x 16px;
-    position: fixed;
-    top: 0;
-    z-index: 4;
   }
-  
-  .main__header > div {
-    display: inline-block;
-    vertical-align: middle;
+
+  .logo {
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-size: 24px;
   }
-  
-  .main__header__logo {
-    color: rgba(190, 184, 184, 0.753);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
+
+  .navLinks {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
   }
-  
-  .top-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 105px);
-    vertical-align: middle;
-  }
-  
-  .top-nav__items {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 10px;
+
+  .navLinks li {
     list-style: none;
   }
-  
-  .top-nav__item {
-    display: inline-block;
-    margin: 0 16px;
-  }
-  
-  .top-nav__item > a {
+
+  .navLinks a {
+    color: whitesmoke;
     text-decoration: none;
-    color: #d4cfc9e3;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .burger {display: none;}
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .navLinks{
+      width: 68%;
+    }
   }
   
-  .top-nav__item a:hover,
-  .top-nav__item a:active {
-    color: white;
-    border-bottom: 3px solid white;
+  @media screen and (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+    }
+    .navLinks {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: #474644ec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translate(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .navLinks li{
+      opacity: 0;
+    }
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
   }
-  
-  .top-nav__item--cta a {
-    color: white;
-    background: #482c07;
-    padding: 8px;
-    border-radius: 3px;
+
+  .nav-active {
+    transform: translateX(0%);
   }
-  
-  .top-nav__item--cta a:hover,
-  .top-nav__item--cta a:active {
-    background: white;
-    color: #482c07;
-  }
+
+

@@ -129,4 +129,22 @@ $(() => {
     $closeBTN.on('click', closeModal);
     setTimeout(openModal, 1000);
 
+
+
+
+
+  const burger = $('.burger');
+  const nav = $('.navLinks');
+  const navlinks =$('li');
+///toggle
+  const openNav =()=>{
+    nav.toggleClass('nav-active')
+    let animation = navlinks.animate({fontSize: '5em', opacity: '0.5'}, "slow");
+    
+  }
+
+burger.on('click', openNav);
+
+
+
 });
