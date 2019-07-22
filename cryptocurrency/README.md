@@ -9,6 +9,7 @@ There are three links in the navigation that lead you to numerous pages and webs
 
 Eventually links will be added to go to each coin.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 My thought process was to get the data, publish in a table to show the current top 100 coins in the market. I had to call the api with ajax, create a loop that
 not only created the rows and necessary data cells but also print out the data at the same time!
@@ -26,5 +27,7 @@ fix too. On the resource page the title of the website isn't white like it's sup
 I want to add links for every coin that is produced so when the user clicks on them it brings them to a page bio of the coin. I want to add a search function that
 allows a user to search a top 100 coin. 
 
+=======
+>>>>>>> parent of 1bb578f... Done! I am happy for now with the result
 =======
 >>>>>>> parent of 1bb578f... Done! I am happy for now with the result
