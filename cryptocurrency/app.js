@@ -3,7 +3,8 @@ $(() => {
   // const coin = 'BTC'
   // const endpoint = `https://min-api.cryptocompare.com/data/price?fsym=${coin}&tsyms=USD,JPY,EUR,BTC?apikey=6ccfcc7c18aa8c9a843472090f99f174349d955a89cbfc6a69b0f78f3ace71c5`
   const $marketCapNumber = 100;
-  const endpoint = `https://min-api.cryptocompare.com/data/top/mktcapfull?limit=${$marketCapNumber}&tsym=USD&?apikey=6ccfcc7c18aa8c9a843472090f99f174349d955a89cbfc6a69b0f78f3ace71c5`;
+  const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com'
+  const endpoint = `${corsAnywhereUrl}/https://min-api.cryptocompare.com/data/top/mktcapfull?limit=${$marketCapNumber}&tsym=USD&?apikey=6ccfcc7c18aa8c9a843472090f99f174349d955a89cbfc6a69b0f78f3ace71c5`;
   console.log(endpoint);
 
   const handleData = data => {
@@ -100,13 +101,7 @@ $(() => {
     // }
   };
   $.ajax({
-    url: endpoint,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-      'Access-Control-Allow-Headers': 'Authorization'
-    }
+    url: endpoint
   }).then(handleData);
 
 
